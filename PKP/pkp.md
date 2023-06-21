@@ -12,34 +12,36 @@ The private key is used to perform operations such as signing and decrypting, wh
 
 ## **Use Cases for PKPs:**
 
-### **Secure Communication:**
-PKPs are commonly used in secure messaging protocols, such as Pretty Good Privacy (PGP) and Secure/Multipurpose Internet Mail Extensions (S/MIME), to encrypt and authenticate email communications. PKPs ensure that only intended recipients can read the messages and verify the authenticity of the sender.
+### **Seed-phraseless onboarding experiences with multi-factor authentication :**
+This refers to a user-friendly method of creating accounts or accessing cryptographic systems without the need for traditional seed phrases while incorporating an additional layer of security through multi-factor authentication.
+By combining seed-phraseless onboarding experiences with MFA, users can enjoy a more user-friendly account creation process while ensuring enhanced security. These approaches aim to strike a balance between usability and security, making it easier for users to adopt cryptographic systems and reducing the risk of losing access to their accounts due to seed phrase mishandling or loss.
 
-### **Digital Signatures:**
-PKPs enable the creation and verification of digital signatures, which provide a means of proving the authenticity and integrity of electronic documents. Digital signatures are widely used in e-commerce, legal agreements, and software distribution to establish trust and prevent tampering.
+### **Signing Automation and Conditional Transaction Execution:**
+This refers to techniques used to streamline and automate the process of signing transactions while incorporating conditions for their execution. This involves the use of software or systems to automatically generate cryptographic signatures for transactions and that is where PKPs are used. Instead of manually signing each transaction, signing automation enables the automation of this process, saving time and effort for users.
 
-### **Secure Access:** 
-PKPs play a crucial role in secure access mechanisms, including secure shell (SSH) authentication and virtual private networks (VPNs). PKPs provide a secure and convenient way to authenticate users and establish encrypted communication channels.
+Conditional transaction execution allows for the execution of transactions based on predefined conditions. These conditions can be programmed into smart contracts or transaction scripts, specifying certain criteria that must be met for the transaction to be executed. This feature enables the creation of more complex transaction workflows and facilitates conditional decision-making during transaction execution.
 
-### **Blockchain Technology:**
-PKPs are integral to blockchain systems. They facilitate secure transactions, address generation, and identity management. PKPs ensure that only authorized entities can perform operations on the blockchain and validate the integrity of transactions.
+### **Cross-Chain Messaging and Swaps:** 
+This refers to the ability to send and receive messages or data between different blockchain platforms. It enables interoperability and communication across disparate blockchain networks, allowing for the seamless transfer of information and instructions.
+
+Cross-chain swaps, on the other hand, involve the exchange of assets or tokens between different blockchain networks without the need for intermediaries or centralized exchanges. These swaps enable users to trade assets across different chains, unlocking liquidity and expanding the possibilities for decentralized trading.
+
+By combining cross-chain messaging and swaps, users can leverage the benefits of different blockchain networks, access a wider range of assets, and overcome the limitations of a single blockchain ecosystem. This promotes interoperability and opens up new opportunities for decentralized finance (DeFi), decentralized applications (dApps), and other blockchain-based services.
+
+
 
 ## **Quick Start Guide:**
 
-### **Step 1: Generate a Key Pair:**
-To get started with PKPs, you need to generate a key pair. There are numerous cryptographic libraries and tools available in different programming languages to accomplish this task. Popular choices include OpenSSL, Crypto++, and libraries specific to programming languages like Python's cryptography library.
+### **Step 1: Install Lit SDK:**
+First, you need to install the Lit SDK, 
+using the directions on [official Lit documentation](https://developer.litprotocol.com/SDK/Explanation/installation) 
 
-### **Step 2: Choose the Right Algorithm:**
-Select an appropriate cryptographic algorithm for your use case. Commonly used algorithms include RSA, Elliptic Curve Cryptography (ECC), and Digital Signature Algorithm (DSA). Consider factors such as key size, performance, and compatibility when making your selection.
+### **Step 2: Set Up the Environment:**
+After installing the Lit SDK, set up your development environment. This may involve configuring environment variables, importing necessary libraries, or initializing the Lit Protocol SDK.
 
-### **Step 3: Implement Encryption and Decryption:**
-Use the public key from the generated key pair to encrypt sensitive data and the corresponding private key to decrypt it. Ensure you follow best practices for encryption, including padding and secure key management.
+### **Step 3: Generate a Key Pair:**
+To get started with PKPs, you need to generate a key pair. You can use the [official Lit documentation](https://developer.litprotocol.com/SDK/Explanation/installation) 
 
-### **Step 4: Implement Digital Signatures:**
-Utilize the private key to sign digital documents or messages. This process involves generating a cryptographic hash of the data and encrypting the hash with the private key. Recipients can verify the signature using the public key, ensuring the authenticity and integrity of the document.
-
-### **Step 5: Secure Communication:**
-Explore existing protocols and libraries that utilize PKPs for secure communication, such as PGP and S/MIME. Integrate PKPs into your messaging systems to enable encrypted communication and ensure secure interactions between parties.
 
 ## **Conclusion:**
-Programmable Key Pairs offer developers a robust toolkit for implementing secure communication, digital signatures, and access control mechanisms. By understanding the fundamentals of PKPs and following best practices, developers can harness the power of asymmetric cryptography to enhance security and build trustworthy systems. Start
+Programmable Key Pairs offer developers a robust toolkit for implementing a range of security features for your dApp. By understanding the fundamentals of PKPs and following best practices, developers can harness the power of asymmetric cryptography to enhance security and build trustworthy systems.
